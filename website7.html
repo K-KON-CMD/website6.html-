@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Buttons</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .button {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .button:hover .colors {
+            animation: rotate 2s linear infinite;
+        }
+
+        .colors {
+            position: absolute;
+            width: 300%;
+            height: 400%;
+            border-radius: 110%;
+            border: 5px solid transparent;
+            z-index: -1;
+            top: -100%;
+            left: -100%;
+            background: conic-gradient(red, yellow, green, blue);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body background="https://files.catbox.moe/322g2k.jpg">
+
+    <button class="button" onclick="window.location.href='https://wa.me/+233549551004'">
+        <div class="colors"></div>
+        DM LOSTBOY
+    </button>
+    <button class="button" onclick="window.location.href='https://wa.me/+233549551004'">
+        <div class="colors"></div>
+        GIVEAWAY
+    </button>
+    <button class="button" onclick="window.location.href='https://www.mediafire.com/file/5khaicpchoawkvs/C-SUITV1.zip/file'">
+        <div class="colors"></div>
+        C SUIT BUG BOT 
+    </button>
+    <button class="button" onclick="window.location.href='https://whatsapp.com/channel/0029ValF0TZEAKWNPknJ6I0I'">
+        <div class="colors"></div>
+        SUPPORT CHANNEL
+    </button>
+    <button class="button" onclick="window.location.href='https://chat.whatsapp.com/IFLjGrCHRt3DTa1w3xV9oVhttps://1drv.ms/u/s!ArhaDM-i1Fx0bMa-xrlU2BgFodg
+    Send names here
+    How to
+    Open with Chrome
+    Click giveaway
+    Send Ur name and channel name'">
+        <div class="colors"></div>
+        JOIN CLAN
+    </button>
+
+</body>
+</html>
